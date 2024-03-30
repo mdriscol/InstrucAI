@@ -27,7 +27,7 @@ app.post("/", async (req, res) => {
     const prompt = req.body.prompt;
 
     const response = await openai.createCompletion({
-      model: "text-davinci-003",
+      model: "gpt-3.5-turbo-instruct",
       prompt: `Your task is to serve as an AI writing tutor. You should rewrite the user's response to correct any spelling and grammar errors, 
       and provide feedback on where the corrections were made and why they were necessary. Additionally, please rephrase the response in both casual and formal tones, as needed.
       The user's original response is: ${prompt}. Your AI response should include the edited version of the user's response, along with an explanation of where and why corrections were made, and any necessary rephrasing in both casual and formal tones. 

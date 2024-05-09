@@ -1,1 +1,2 @@
 chatGPTprompt
+https://instrucai.com/
